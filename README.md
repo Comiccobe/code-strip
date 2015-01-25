@@ -34,7 +34,11 @@ or for command line:
 	var codeStrip = require(“code-strip”),
 			fs = require(“fs”)
 
-	codeStrip([“temp/dir”, “temp/dir2”], [“cs”, “cpp”], [“ENABLED_DIRECTIVE”, “ANOTHER_DIRECTIVE”])
+	codeStrip(
+		[“temp/dir”, “temp/dir2”],
+		[“cs”, “cpp”],
+		[“DIRECTIVE_0”, “DIRECTIVE_1”]
+	)
 
 ### Running from command line
 
@@ -83,5 +87,8 @@ output:
 
 
 ## Release History
-
+* 0.1.4 Updated README.md
+* 0.1.3 Changes to package.json
+* 0.1.2 Changes to package.json
+* 0.1.1 Changes to package.json
 * 0.1.0 Initial release
