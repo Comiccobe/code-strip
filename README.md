@@ -89,7 +89,8 @@ output:
 
 
 ## Release History
-* 0.1.4 Updated README.md
+* 0.1.6 Updated README.md
+* 0.1.5 Updated README.md
 * 0.1.4 Updated README.md
 * 0.1.3 Changes to package.json
 * 0.1.2 Changes to package.json
