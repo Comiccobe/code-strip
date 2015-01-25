@@ -3,6 +3,8 @@ Code strip
 
 A small library that removes compiler directives and the disabled code that goes along with it.
 
+> Note: Each directory passed in is searched recursively to find files in sub folders too.
+
 
 ## Installation
 
@@ -87,6 +89,7 @@ output:
 
 
 ## Release History
+* 0.1.4 Updated README.md
 * 0.1.4 Updated README.md
 * 0.1.3 Changes to package.json
 * 0.1.2 Changes to package.json
