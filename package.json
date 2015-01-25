@@ -1,0 +1,37 @@
+{
+  "name": "code-strip",
+  "version": "0.1.0",
+  "description": "A node module that strips out compiler defines in code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Comiccobe/code-strip.git"
+  },
+  "keywords": [
+    "directives",
+    "defines",
+    "codestrip"
+  ],
+  "author": "Jakob Hillerström <zurric@gmail.com> (http://j.akob.se/)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Comiccobe/code-strip/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Comiccobe/code-strip/issues"
+  },
+  "homepage": "https://github.com/Comiccobe/code-strip",
+  "dependencies": {
+    "nopt": "^3.0.1"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
+    "mocha-jshint": "0.0.9"
+  }
+}

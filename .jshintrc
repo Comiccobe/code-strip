@@ -1,0 +1,8 @@
+{
+	"curly": true,
+	"camelcase": true,
+	"eqeqeq": true,
+	"asi": true,
+	"node": true,
+	"mocha": true
+}

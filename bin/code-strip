@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+var codeStrip = require("../lib"),
+	nopt = require("nopt"),
+	path = require("path"),
+	options = {
+		dontWrite: Boolean,
+		ifTag: String,
+		endifTag: String,
+		elseTag: String,
+		elifTag: String
+	},
+	shorthand = { 'v': ['--version'] },
+	requiredParams,
+	directories,
+	fileTypes,
+	defines
+
+options = nopt(options, shorthand, process.argv)
+
+if (options.help) {
+	return codeStrip.docs()
+}
+
+codeStrip.version = require(path.join(__dirname, '..', 'package.json')).version
+if (options.version) {
+	return console.log(codeStrip.version)
+}
+
+// set path from remaining arguments
+requiredParams = options.argv.remain
+
+if (requiredParams.length < 3) {
+	return codeStrip.docs()
+}
+
+directories = requiredParams[0].split(",")
+fileTypes = requiredParams[1].split(",")
+defines = requiredParams[2].split(",")
+
+delete options.argv
+
+return codeStrip(directories, fileTypes, defines, options)
