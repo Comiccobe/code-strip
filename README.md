@@ -89,6 +89,7 @@ output:
 
 
 ## Release History
+* 0.1.8 Fixed main script path in package.json. Should work better with require from nodejs now
 * 0.1.7 Updated README.md
 * 0.1.6 Updated README.md
 * 0.1.5 Updated README.md
