@@ -39,4 +39,9 @@ defines = requiredParams[2].split(",")
 
 delete options.argv
 
+if (options.dontWrite) {
+	console.log(codeStrip(directories, fileTypes, defines, options))
+	return;
+}
+
 return codeStrip(directories, fileTypes, defines, options)
