@@ -48,11 +48,11 @@ or for command line:
 
 or for multiple directories and fileTypes
 
-	code-strip “temp/dir,temp/dir2” “cs,cpp”
+	code-strip “temp/dir,temp/dir2” “cs,cpp” "DEFINE0,DEFINE1"
 
 with extra options
 
-	code-strip “temp/dir” “cs” —dontWrite
+	code-strip “temp/dir” “cs” "DEFINE0" —dontWrite
 
 
 ## Options with defaults
@@ -89,6 +89,7 @@ output:
 
 
 ## Release History
+* 0.1.7 Updated README.md
 * 0.1.6 Updated README.md
 * 0.1.5 Updated README.md
 * 0.1.4 Updated README.md
