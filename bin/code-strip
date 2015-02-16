@@ -4,6 +4,7 @@ var codeStrip = require("../lib"),
 	path = require("path"),
 	options = {
 		dontWrite: Boolean,
+		writeTree: Boolean,
 		ifTag: String,
 		endifTag: String,
 		elseTag: String,
