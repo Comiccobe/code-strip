@@ -35,7 +35,13 @@ if (requiredParams.length < 3) {
 
 directories = requiredParams[0].split(",")
 fileTypes = requiredParams[1].split(",")
-defines = requiredParams[2].split(",")
+defines = {}
+
+requiredParams[2].split(",").forEach(function (pair) {
+	var key = pair.split(":")[0],
+		value = pair.split(":")[1]
+	defines[key] = value === "true"
+})
 
 delete options.argv
 
