@@ -18,7 +18,7 @@ or for command line:
 
 ### function signature
 
-	codeStrip(“directories”, “fileTypes”, “directives”, [options])
+	codeStrip(directories, fileTypes, directives, [options])
 
 ### Get docs
 
@@ -29,7 +29,7 @@ or for command line:
 	var codeStrip = require(“code-strip”),
 			fs = require(“fs”)
 
-	codeStrip(“temp/dir”, “cs”, “ENABLED_DIRECTIVE”)
+	codeStrip(“temp/dir”, “cs”, { ENABLED_DIRECTIVE: true })
 
 ### Running from node with multiple directories, file types and directives
 
@@ -39,20 +39,20 @@ or for command line:
 	codeStrip(
 		[“temp/dir”, “temp/dir2”],
 		[“cs”, “cpp”],
-		[“DIRECTIVE_0”, “DIRECTIVE_1”]
+		{ DIRECTIVE_0: true, DIRECTIVE_1: true }
 	)
 
 ### Running from command line
 
-	code-strip “temp/dir” “cs” "DEFINE0"
+	code-strip “temp/dir” “cs” "DEFINE0:true"
 
 or for multiple directories and fileTypes
 
-	code-strip “temp/dir,temp/dir2” “cs,cpp” "DEFINE0,DEFINE1"
+	code-strip “temp/dir,temp/dir2” “cs,cpp” "DEFINE0:true,DEFINE1:true"
 
 with extra options
 
-	code-strip “temp/dir” “cs” "DEFINE0" —dontWrite
+	code-strip “temp/dir” “cs” "DEFINE0:true" —dontWrite
 
 
 ## Options with defaults
@@ -90,6 +90,7 @@ output:
 
 
 ## Release History
+* 1.0.11 Updated README.md
 * 1.0.10 Rewrite that now creates an AST that later gets parsed. Should now work on more cases.
 * 0.1.10 Updated README.md
 * 0.1.9 Added console.log to code-strip CLI when dontWrite is set to true

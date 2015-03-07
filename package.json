@@ -1,6 +1,6 @@
 {
   "name": "code-strip",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A node module that strips out compiler defines in code.",
   "main": "./lib/index.js",
   "directories": { "bin": "./bin" },
