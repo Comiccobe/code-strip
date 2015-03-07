@@ -62,7 +62,8 @@ with extra options
 		ifTag: "#if ",
 		endifTag: "#endif",
 		elseTag: "#else",
-		elifTag: "#elif "
+		elifTag: "#elif ",
+		writeTree: false
 	}
 
 
@@ -89,6 +90,7 @@ output:
 
 
 ## Release History
+* 1.0.10 Rewrite that now creates an AST that later gets parsed. Should now work on more cases.
 * 0.1.10 Updated README.md
 * 0.1.9 Added console.log to code-strip CLI when dontWrite is set to true
 * 0.1.8 Fixed main script path in package.json. Should work better with require from nodejs now
